@@ -27,5 +27,7 @@
  */
 
 import './index.css';
+import main from './app';
 
+window.onload = main;
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
