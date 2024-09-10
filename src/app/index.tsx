@@ -1,7 +1,8 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
+import Router from "@app/router";
 
 const App = () => {
-    return (<h1>Youtube Clip Player</h1>);
+    return (<Router />);
 };
 
 const main = () => {
