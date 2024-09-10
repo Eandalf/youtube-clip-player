@@ -9,4 +9,4 @@ libgtk-3-0 \
 libgbm1
 ```
 
-However, it seems impossible to fix the sandbox missing problem.
+However, the GUI support is missing on WSL2. It seems impossible to develop Electron.js related projects on WSL2.
