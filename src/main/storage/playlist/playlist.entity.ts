@@ -1,4 +1,4 @@
 export class PlayList {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
 }
