@@ -1,5 +1,4 @@
-// TODO: expose and register storage methods through ipcMain here.
-
+import { AccountController } from "./account/account.controller";
 import { AccountService } from "./account/account.service";
 
 // test for the storage methods
@@ -16,3 +15,9 @@ export const test = async () => {
   console.log(account2);
 
 }
+
+export const registerStorage = () => {
+  const accountController = new AccountController();
+
+  accountController.register();
+};
