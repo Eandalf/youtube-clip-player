@@ -7,7 +7,7 @@ import { PlayList } from "@main/storage/playlist/playlist.entity";
 import { Table } from "./table.enum";
 import { TableDefault } from "./table.default";
 
-const dataDir = path.join(app.getPath("userData"), "./app_data");
+const dataDir = path.join(app.getPath("userData"), "./app_data/db");
 
 /**
  * Write data to disk by table name.
