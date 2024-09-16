@@ -7,7 +7,21 @@ import { PlayList } from "@main/storage/playlist/playlist.entity";
 import { Table } from "./table.enum";
 import { TableDefault } from "./table.default";
 
-const dataDir = path.join(app.getPath("userData"), "./app_data/db");
+const userDataDir = app.getPath("userData");
+const appDataDir = "./app_data";
+const dbDir = "./db";
+const dataDir = path.join(userDataDir, appDataDir, dbDir);
+
+/**
+ * Initialize the directories.
+ */
+const initialize = async () => {
+  try {
+    await fs.promises.access(path.join(userDataDir, appDataDir, dbDir), fs.constants.F_OK);
+  } catch {
+    await fs.promises.mkdir(path.join(userDataDir, appDataDir, dbDir), { recursive: true });
+  }
+};
 
 /**
  * Write data to disk by table name.
@@ -42,4 +56,4 @@ const readData = async (
   return JSON.parse(data);
 };
 
-export { writeData, readData };
+export { initialize, writeData, readData };
