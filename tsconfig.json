@@ -19,5 +19,5 @@
       "@main/*": ["src/main/*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["src"]
 }

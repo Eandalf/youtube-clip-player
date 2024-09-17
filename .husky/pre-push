@@ -1,2 +1,2 @@
 . .husky/common.sh
-yarn type-check && yarn lint
+yarn type-check && yarn lint && yarn test:unit
