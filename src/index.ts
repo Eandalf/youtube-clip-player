@@ -52,8 +52,7 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
 
-import { initialize, test, registerStorage } from '@main/storage';
+import { initialize, registerStorage } from '@main/storage';
 initialize().then(() => {
   registerStorage();
-  test();
 });
