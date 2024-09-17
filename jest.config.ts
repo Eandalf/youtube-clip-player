@@ -16,7 +16,7 @@ const config: Config = {
   collectCoverage: true,
   coverageDirectory: "<rootDir>/.jest/coverage",
   collectCoverageFrom: [
-    '<rootDir>/src/**/*.(t|j)sx?',
+    "<rootDir>/src/**/*.{ts, tsx, js, jsx}",
   ],
   cacheDirectory: "<rootDir>/.jest/cache",
 };
