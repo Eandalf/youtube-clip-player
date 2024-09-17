@@ -53,7 +53,11 @@ const readData = async (
   }
 
   const data = await fs.promises.readFile(filePath, "utf8");
-  return JSON.parse(data);
+  try {
+    return JSON.parse(data);
+  } catch {
+    return TableDefault[tableName];
+  }
 };
 
 export { initialize, writeData, readData };
