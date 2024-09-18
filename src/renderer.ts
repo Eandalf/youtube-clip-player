@@ -28,6 +28,7 @@
 
 import './normalize.css';
 import './index.css';
+import './output.css';
 import main from './app';
 
 window.onload = main;

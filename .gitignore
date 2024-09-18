@@ -93,3 +93,9 @@ out/
 
 # Jest
 .jest/
+
+# VS Code
+.vscode/
+
+# Tailwind CSS
+src/output.css
