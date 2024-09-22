@@ -6,6 +6,8 @@
 - TypeScript
 - React.js
 - React Router
+- Tailwind CSS
+- shadcn/ui
 
 ## husky
 
