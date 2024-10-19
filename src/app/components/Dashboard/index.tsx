@@ -3,6 +3,7 @@ import {
   MouseEvent,
 } from "react";
 import { Outlet } from "react-router-dom";
+import Route from "@app/router/route.enum";
 import { ScrollArea } from "@app/components/ui/scroll-area";
 import { Separator } from "@app/components/ui/separator";
 import NavLink from "./NavLink";
@@ -31,13 +32,13 @@ const Dashboard = () => {
         {openNavLinks && (<>
           <NavLink to="/">Home</NavLink>
           <Separator />
-          <NavLink to="/test">Link 2</NavLink>
+          <NavLink to={"/" + Route.ACCOUNT}>Guest</NavLink>
           <Separator />
-          <NavLink to="/test">Link 3</NavLink>
+          <NavLink to={"/" + Route.COLLECTION}>Collection</NavLink>
           <Separator />
-          <NavLink to="/test">Link 4</NavLink>
+          <NavLink to={"/" + Route.PLAYLIST}>Playlist</NavLink>
           <Separator />
-          <NavLink to="/test">Link 5</NavLink>
+          <NavLink to={"/" + Route.CLIP}>Clip</NavLink>
         </>)}
       </ScrollArea>
       <div className="flex-auto p-8">
